@@ -1,8 +1,6 @@
 package com.ancs.java8;
 
-import java.time.*;
 import java.lang.*;
-import java.util.*;
 
 public class TestSimpleTimeClient {
     public static void main(String... args) {
