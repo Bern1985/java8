@@ -8,11 +8,19 @@ public class Transaction implements Comparable<Transaction>{
     protected Integer id;
     protected String type;
     protected Double  value;
+    private String city;
 
     public Transaction(Integer id, String type, double value) {
         this.id = id;
         this.type = type;
         this.value = value;
+    }
+
+    public Transaction(Integer id, String type, double value, String city) {
+        this.id = id;
+        this.type = type;
+        this.value = value;
+        this.city = city;
     }
 
     public int getId() {
@@ -25,6 +33,10 @@ public class Transaction implements Comparable<Transaction>{
 
     public Double getValue(){
         return this.value;
+    }
+
+    public String getCity() {
+        return city;
     }
 
     public int compareTo(Transaction t1) {
